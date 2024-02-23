@@ -1,0 +1,331 @@
+.trips-weather__container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.trips-weather__left {
+    padding-top: 50px;
+    flex-basis: 65%;
+}
+
+.trips-weather__right {
+    background: #717889;
+    flex-basis: 35%;
+    padding: 20% 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+/* Trips list style */
+.trips__wrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+.trip-timer div {
+  display: flex;
+  gap: 30px;
+}
+
+.trip-timer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  gap: 10px;
+  font-size: 42px;
+}
+
+.trip-timer p span {
+  font-size: 12px;
+}
+
+.trips__list ::-webkit-scrollbar {
+  width: 5px; 
+}
+
+
+.trips__list {
+    display: flex;
+    padding-bottom: 10px;
+    gap: 50px;
+    margin-bottom: 40px;
+    max-width: 555px;
+    overflow: auto;
+    scrollbar-width: thin; 
+}
+
+.search-trip {
+  margin: 50px 0;
+  max-width: fit-content;
+}
+
+.search-trip__field {
+   background: rgb(231, 232, 238);
+   border-radius: 10px;
+   border: 0;
+   padding: 10px 10px 10px 40px;
+}
+
+.search-trip__field-wrap {
+  position: relative;
+}
+
+.search-trip__help-menu {
+  padding: 10px;
+  background: rgb(231, 232, 238);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тут встановлюємо тінь */
+  border-radius: 10px;
+}
+
+.search-trip__icon {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.trips__item.trips__item-active{
+    border: 1px solid blue;
+}
+
+.trips__item {
+  border: 1px solid transparent;
+}
+
+.trips__image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.trips__text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.trips__date {
+    color: gray;
+    font-size: 12px;
+}
+
+/* Weather Week */
+.trip-forecast__icon {
+    margin-bottom: 20px;
+}
+
+.trip-forecast__icon img{
+    height: 50px;
+    width: 50px;
+}
+
+.trip-forecast__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.trip-forecast__item-title {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.trip-forecast__title {
+    margin-bottom: 40px;
+}
+
+
+/* Day Weather */ 
+
+.day-forecast__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+}
+
+.day-forecast__icon {
+    position: absolute;
+    left: -90px;
+}
+
+.day-forecast__icon img{
+    width: 75px;
+    height: 75px;
+}
+
+.day-forecast__item-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.day-forecast__temp {
+    display: flex;
+    font-size: 72px;
+    position: relative;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.day-forecast__temp .day-forecast__temp-symbol {
+    font-size: 32px;
+    align-self: flex-start;
+}
+
+
+.day-forecast__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.day-forecast__name {
+    font-size: 32px;
+}
+
+
+/* Button Add Trip */
+.add-trip {
+    background: #e6eded;
+    width: 150px;
+    height: 150px;
+}
+
+.add-trip__icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin: 0 auto 10px auto;
+}
+
+.add-trip__text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Create trip Popup */
+
+.create-trip-popup {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тут встановлюємо тінь */
+    width: 600px;
+    position: fixed;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .create-trip-popup__header {
+    border-bottom: 1px solid gray;
+  }
+
+  .create-trip-popup__footer {
+    border-top: 1px solid gray;
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px;
+  }
+
+  .create-trip-popup__wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .create-trip-popup__footer .create-trip-popup__wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  .create-trip-popup__cancel-button {
+    border: 1px solid gray;
+    padding: 5px 15px;
+  }
+
+  .create-trip-popup__save-button {
+    background: rgb(62, 131, 217);
+    padding: 5px 15px;
+    color: #FFF;
+  }
+
+  .create-trip-popup__body {
+    margin: 50px 0;
+    flex-basis: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .create-trip-popup__input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .create-trip-popup__input-group .create-trip-popup__label {
+    margin-bottom: 10px;
+  }
+
+  .create-trip-popup__input-group .create-trip-popup__select,
+  .create-trip-popup__input-group .create-trip-popup__input {
+      padding: 10px;
+  }
+
+  .create-trip-popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.7;
+  }
+
+  .create-trip-popup__invalid-alert {
+    color: red;
+  }
+
+  .field-invalid {
+    border-color: red;
+  }
+
+
+  /* Next and prev buttons */
+
+  .next-perv-buttons__next,
+  .next-perv-buttons__prev  {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(62, 131, 217);
+    color: #FFF;
+  }
+
+  .next-perv-buttons {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }

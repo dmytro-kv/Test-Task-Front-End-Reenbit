@@ -1,0 +1,95 @@
+/* Обнулення margin і padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Обнулення списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Обнулення текстових стилів */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Обнулення стилів для вбудованих медіа */
+img,
+iframe,
+embed,
+object,
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Додаткові найновіші обнулюючі стилі */
+/* Відображення flex-контейнера */
+.flex-container {
+  display: flex;
+}
+
+/* Відображення grid-контейнера */
+.grid-container {
+  display: grid;
+}
+
+/* Повне обнулення стилів посилань */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Обнулення стилів кнопок */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Обнулення стилів для форм */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+/* Обнулення стилів для таблиць */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
+
+/* Обнулення стилів для файлових інпутів */
+input[type="file"] {
+  cursor: pointer;
+}
